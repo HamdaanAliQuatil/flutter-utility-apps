@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:footer_mgnregs/screens/weather_screen.dart';
 import '../screens/dashboard.dart';
 import '../screens/intro_screen.dart';
 
@@ -22,7 +23,7 @@ class MenuDrawer extends StatelessWidget {
       'Home',
       'Dashboard',
       'Scan',
-      'Settings',
+      'Weather',
       'Profile',
       'Calendar',
       'Create Task',
@@ -51,6 +52,9 @@ class MenuDrawer extends StatelessWidget {
                 break;               
               case 'Dashboard':
                 screen = Dashboard();
+                break; 
+              case 'Weather':
+                screen = WeatherScreen();
                 break; 
             }
           Navigator.of(context).push(

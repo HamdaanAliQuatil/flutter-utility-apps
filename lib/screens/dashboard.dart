@@ -52,7 +52,7 @@ class _ScanState extends State<Scan> {
       elevation: 0.0,
       ),
       
-      bottomNavigationBar: MenuButton(),
+      bottomNavigationBar: MyArc(),
       
       drawer: MenuDrawer(),
       

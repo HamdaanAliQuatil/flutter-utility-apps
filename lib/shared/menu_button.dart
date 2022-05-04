@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: Text('Test App'),
       ),
-      bottomNavigationBar: BottomNavigationBar(
+        bottomNavigationBar: BottomNavigationBar(
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.blue,
         showUnselectedLabels: true,
@@ -112,7 +112,7 @@ class _MyAppState extends State<MyApp> {
 class MyArc extends StatelessWidget {
   final double diameter;
 
-  const MyArc({Key key, this.diameter = 200}) : super(key: key);
+  const MyArc({Key? key, this.diameter = 200}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -21,7 +21,7 @@ class Dashboard extends StatelessWidget {
       elevation: 0,
       ),
       drawer: MenuDrawer(),
-      bottomNavigationBar: MenuButton(),
+      bottomNavigationBar: MyArc(),
         
     
       body: Container(
