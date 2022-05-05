@@ -30,7 +30,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
     HttpHelper helper = HttpHelper();
     result = await helper.getWeather('Delhi');
     setState(() {
-      
     });
   }
 

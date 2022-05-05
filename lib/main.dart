@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:footer_mgnregs/screens/dashboard.dart';
 import 'package:footer_mgnregs/screens/intro_screen.dart';
+import 'package:footer_mgnregs/screens/weather_screen.dart';
 
 void main() {
   runApp(GlobeApp());
@@ -19,6 +20,7 @@ class GlobeApp extends StatelessWidget {
       routes: {
         '/':(context) => Dashboard(),
         '/scan':(context) => Scan(),
+        '/weather':(context) => WeatherScreen(),
       },
       );
   }
