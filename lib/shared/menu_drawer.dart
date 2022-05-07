@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:footer_mgnregs/screens/weather_screen.dart';
 import '../screens/dashboard.dart';
 import '../screens/intro_screen.dart';
+import '../screens/sessions_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class MenuDrawer extends StatelessWidget {
       'Dashboard',
       'Scan',
       'Weather',
-      'Profile',
+      'Training',
       'Calendar',
       'Create Task',
     ];
@@ -55,6 +56,9 @@ class MenuDrawer extends StatelessWidget {
                 break; 
               case 'Weather':
                 screen = WeatherScreen();
+                break; 
+              case 'Training':
+                screen = SessionsScreen();
                 break; 
             }
           Navigator.of(context).push(

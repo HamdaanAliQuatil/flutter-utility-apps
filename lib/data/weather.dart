@@ -16,7 +16,5 @@ class Weather {
     this.pressure = (weatherMap['main']['pressure']) ?? 0;
     this.humidity = (weatherMap['main']['humidity']) ?? 0;
     this.description = weatherMap['weather'][0]['main'] ?? '';
-
-
   }
 }

@@ -20,6 +20,8 @@ class MenuButton extends StatelessWidget {
                   break;
           case 2: Navigator.pushNamed(context, '/weather');
                   break;
+          case 3: Navigator.pushNamed(context, '/sessions_screen');
+                  break;
         }
       },                                                      
       type: BottomNavigationBarType.fixed, 
@@ -41,7 +43,7 @@ class MenuButton extends StatelessWidget {
         ),
         BottomNavigationBarItem( //import icons how to search
           icon: Icon(Icons.person),
-          label: 'Profile',
+          label: 'Training',
         ),
     ],
     );
