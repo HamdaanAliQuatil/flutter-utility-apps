@@ -13,8 +13,8 @@ class Weather {
     // this.temperature = (weatherMap['main']['temp'] * (9/5) - 459.67) ?? 0;
     this.temperature = (weatherMap['main']['temp'] - 273.15) ?? 0;
     this.perceived = (weatherMap['main']['feels_like'] - 273.15) ?? 0;
-    this.perceived = (weatherMap['main']['pressure']) ?? 0;
-    this.perceived = (weatherMap['main']['humidity']) ?? 0;
+    this.pressure = (weatherMap['main']['pressure']) ?? 0;
+    this.humidity = (weatherMap['main']['humidity']) ?? 0;
     this.description = weatherMap['weather'][0]['main'] ?? '';
 
 
